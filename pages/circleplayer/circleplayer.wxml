@@ -1,0 +1,100 @@
+<view class="section">
+  <view class="match-info">
+    <text class="match-info-name">{{matchName}}</text>
+  </view>
+</view>
+
+<view class="section">
+  <view class="team-name">
+    <text>{{homeTeam}}</text>
+    <text>{{guestTeam}}</text>
+  </view>
+
+  <view class="team-score">
+    <text class="team-score-text">{{homeScore}}</text>
+    <text class="quarter">第 {{quarter}} 节</text>
+    <text class="team-score-text">{{guestScore}}</text>
+  </view>
+
+  <view class="info">
+    <view class="info-left">
+    <view wx:for="{{homeTimeOut}}" wx:key="*this">
+      <image src="../../images/star.png" class="info-left-image"/>
+    </view>
+    <text>暂停</text>
+    </view>
+    <view class="info-right">
+    <text>暂停</text>
+    <view wx:for="{{guestTimeOut}}" wx:key="*this">
+      <image src="../../images/star.png" class="info-right-image"/>
+    </view>
+    </view>
+  </view>
+
+  <view class="info">
+    <view class="info-left">
+    <view wx:for="{{homeFoul}}" wx:key="*this">
+      <image src="../../images/record.png" class="info-left-image"/>
+    </view>
+      <text>犯规</text>
+    </view>
+    <view class="info-right">
+      <text>犯规</text>
+    <view wx:for="{{guestFoul}}" wx:key="*this">
+      <image src="../../images/record.png" class="info-right-image"/>
+    </view>
+    </view>
+  </view> 
+</view>
+
+<view class="section">
+  <text>主队:</text>
+  <view class="players">
+    <view wx:for="{{homePlayers}}" wx:for-item="player">
+      <button type="default" class="btn-player" bindtap="actionSheetTap">
+      <text>{{player.num}}</text>
+      </button>
+    </view>
+  <button type="default" class="btn-player" bindtap="actionSheetTap">
+    <text>Coach</text>
+  </button>
+  <button type="default" class="btn-player" bindtap="actionSheetTap">
+    <text>+1</text>
+  </button>
+  <button type="default" class="btn-player" bindtap="actionSheetTap">
+    <text>+2</text>
+  </button>
+  <button type="default" class="btn-player" bindtap="actionSheetTap">
+    <text>+3</text>
+  </button>
+  <button type="default" class="btn-player" bindtap="actionSheetTap">
+    <text>-1</text>
+  </button>
+  <button type="default" class="btn-player" bindtap="actionSheetTap">
+    <text>Foul</text>
+  </button>
+  <button type="default" class="btn-player" bindtap="actionSheetTap">
+    <text>Time Out</text>
+  </button>
+  </view>
+  
+
+  <text>客队:</text>
+  <view class="players">
+    <view wx:for="{{homePlayers}}" wx:for-item="player">
+      <button type="default" class="btn-player" bindtap="actionSheetTap">
+      <text>{{player.num}}</text>
+      </button>
+    </view>
+  <button type="default" class="btn-player" bindtap="actionSheetTap">
+    <text>Coach</text>
+  </button>
+  <button type="default" class="btn-player" bindtap="actionSheetTap">
+    <text>+</text>
+  </button>
+  </view>
+
+
+</view>
+
+

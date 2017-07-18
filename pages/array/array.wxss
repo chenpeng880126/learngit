@@ -1,0 +1,56 @@
+
+.container {
+  height: 100%;
+  
+  padding: 50rpx 10px;
+  box-sizing: border-box;
+} 
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.view-list{
+  height: 60rpx;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+
+}
+
+.marlr10{
+  font-size: 10px;
+
+}
+
+.view-button{
+  display: flex;
+  flex-direction: column;
+}
+
+.login-item{
+  margin-top: 5px;
+  border: 1px solid #aaa;
+  display: flex;
+
+}

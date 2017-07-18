@@ -1,0 +1,182 @@
+.section{
+border-bottom: 5rpx solid #aaa;
+
+}
+.match-info{
+  height: 50rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.match-info-no{
+  font-size: 20rpx;
+  font-weight:bold;
+  color: cornflowerblue;
+}
+
+.match-info-name{
+  font-size: 50rpx;
+  font-weight:bold;
+  color: cornflowerblue;
+}
+
+.team-name{
+  height: 40rpx;
+  margin-top: 10rpx;
+  display: flex;
+}
+
+.team-name text{
+  width: 50%;
+  font-size: 40rpx;
+  font-weight:bold;
+  color: lightseagreen;
+  display: flex;
+  justify-content: center;
+}
+.quarter{
+  font-weight:bold;
+  display: flex;
+  align-content: center;
+   width: 120rpx;
+  font-size: 30rpx;
+}
+.team-score{
+  height: 80rpx;
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.team-score-text{
+  width: 50%;
+  font-size: 80rpx;
+  font-weight:bold;
+  color: palevioletred;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.info image{
+  height: 30rpx;
+  width: 30rpx
+}
+
+.info-left{
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.info-left-image{
+  height: 30rpx;
+  width: 30rpx; 
+  margin-right: 10rpx;
+}
+
+.info-right{
+  width: 45%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.info-right-image{
+  height: 30rpx;
+  width: 30rpx; 
+  margin-left: 10rpx;
+}
+
+.time{
+  height: 60rpx;
+  font-size: 60rpx;
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.team-recorder{
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-score{
+  height: 80rpx;
+  width: 150rpx;
+  margin-bottom: 5rpx;
+  margin-left: 10rpx;
+  margin-right: 5rpx;
+  color: black;
+  border-radius: 20rpx;
+  border: 1px solid black;
+}
+
+.btn-score-info{
+  height: 80rpx;
+  width: 150rpx;
+  font-size: 30rpx;
+  margin-bottom: 5rpx;
+  margin-left: 10rpx;
+  margin-right: 5rpx;
+  color: black;
+  border-radius: 20rpx;
+  border: 1px solid black;
+}
+
+.clear{
+  margin-top:5rpx;
+  margin-bottom: 5rpx;
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.btn-score-clear{
+  height: 80rpx;
+  width: 180rpx;
+  font-size: 30rpx;
+  /*border: 1px solid black;*/
+}
+
+.time-control{
+  margin-top:5rpx;
+  margin-bottom: 5rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.btn-time-control{
+  height: 50rpx;
+  width: 160rpx;
+  font-size: 20rpx;
+  margin-bottom: 5rpx;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+  color: black;
+  border-radius: 20rpx;
+  border: 1px solid black;
+}
+.btn-time-control-24{
+  height: 70rpx;
+  width: 150rpx;
+  font-size: 15rpx;
+  margin-bottom: 5rpx;
+  margin-left: 10rpx;
+  margin-right: 5rpx;
+  color: black;
+  border-radius: 20rpx;
+  border: 1px solid black;
+}

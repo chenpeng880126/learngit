@@ -1,0 +1,110 @@
+<view class="section">
+  <view class="match-info">
+    <text class="match-info-name">{{matchName}}</text>
+  </view>
+</view>
+
+<view class="section">
+  <view class="team-name">
+    <text>{{homeTeam}}</text>
+    <text>{{guestTeam}}</text>
+  </view>
+
+  <view class="team-score">
+    <text class="team-score-text">{{homeScore}}</text>
+    <text class="quarter">第 {{quarter}} 节</text>
+    <text class="team-score-text">{{guestScore}}</text>
+  </view>
+
+  <view class="info">
+    <view class="info-left">
+    <view wx:for="{{homeTimeOut}}" wx:key="*this">
+      <image src="../../images/star.png" class="info-left-image"/>
+    </view>
+    <text>暂停</text>
+    </view>
+    <view class="info-right">
+    <text>暂停</text>
+    <view wx:for="{{guestTimeOut}}" wx:key="*this">
+      <image src="../../images/star.png" class="info-right-image"/>
+    </view>
+    </view>
+  </view>
+
+  <!--<view class="time">
+    10:00
+  </view>-->
+
+  <view class="info">
+    <view class="info-left">
+    <view wx:for="{{homeFoul}}" wx:key="*this">
+      <image src="../../images/record.png" class="info-left-image"/>
+    </view>
+      <text>犯规</text>
+    </view>
+    <view class="info-right">
+      <text>犯规</text>
+    <view wx:for="{{guestFoul}}" wx:key="*this">
+      <image src="../../images/record.png" class="info-right-image"/>
+    </view>
+    </view>
+  </view> 
+
+  <!--<view class="time">
+    24
+  </view>-->
+
+</view>
+
+<view class="section">
+  <text>主队:</text>
+  <view class="team-recorder"> 
+   <button class="btn-score" bindtap="clickBtnScore" id="{{home1}}">+1</button>
+   <button class="btn-score" bindtap="clickBtnScore" id="{{home2}}">+2</button>
+   <button class="btn-score" bindtap="clickBtnScore" id="{{home3}}">+3</button>
+   <button class="btn-score" bindtap="clickBtnScore" id="{{home_1}}">-1</button>
+   <button class="btn-score-info" bindtap="clickBtnInfo" id="homeT">暂停</button>
+   <button class="btn-score-info" bindtap="clickBtnInfo" id="homeF">犯规</button>
+   
+  </view>
+  <text>客队:</text>
+  <view class="team-recorder">  
+   <button class="btn-score" bindtap="clickBtnScore" id="{{guest1}}">+1</button>
+   <button class="btn-score" bindtap="clickBtnScore" id="{{guest2}}">+2</button>
+   <button class="btn-score" bindtap="clickBtnScore" id="{{guest3}}">+3</button>
+   <button class="btn-score" bindtap="clickBtnScore" id="{{guest_1}}">-1</button>
+   <button class="btn-score-info" bindtap="clickBtnInfo" id="guestT">暂停</button>
+   <button class="btn-score-info" bindtap="clickBtnInfo" id="guestF">犯规</button>
+  
+  </view>
+
+</view>
+
+<view class="section">
+  <view class="clear">
+    <button class="btn-score-clear" type="primary" bindtap="clickBtnQuarter">节数+1</button>  
+    <button class="btn-score-clear" type="primary" bindtap="clickBtnClear" id="timeOut">暂停复位</button>
+    <button class="btn-score-clear" type="primary" bindtap="clickBtnClear" id="foul">犯规复位</button>
+    <button class="btn-score-clear" type="primary" bindtap="clickBtnClear" id="all">全部复位</button>
+  </view>
+
+  <modal 
+    title="清除记录"
+     hidden="{{hiddenModal}}"
+     confirm-text="确定"
+     cancel-text="取消"
+     bindconfirm="modalConfirm"
+     bindcancel="modalCancel" >
+     您是否要清除所有记录
+  </modal>
+</view>
+
+<!--<view class="section">
+<view class="time-control">
+  <button class="btn-time-control" >时间设置</button>  
+  <button class="btn-time-control" >启动/暂停</button>
+  <button class="btn-time-control-24" >24秒启动/暂停</button>
+  <button class="btn-time-control" >回24秒</button>
+  <button class="btn-time-control" >回14秒</button>
+</view>
+</view>-->

@@ -1,0 +1,14 @@
+
+<view class="players">
+  <view class="players-item" wx:for="{{players}}" wx:for-item="player"> 
+    <button type="default" class="btn-click" bindtap="actionSheetTap">{{player.num}}</button>
+  </view>
+</view>
+
+  <action-sheet class="action-sheet" hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+      <block class="sheet-items" wx:for-items="{{actionSheetItems}}">
+          <action-sheet-item class="item" bindtap="bind{{item}}">{{item}}</action-sheet-item>
+      </block>
+      <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+  </action-sheet>
+ 

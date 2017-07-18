@@ -1,0 +1,40 @@
+/* pages/actinsheet/actionsheet.wxss */
+.action-sheet{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sheet-items{
+
+  height: 100rpx;
+  width:100%
+}
+
+.item{
+  height: 30rpx;
+  width: 100%;
+}
+
+.btn-click{
+  height: 100rpx;
+  width:100rpx;
+  margin: 10rpx;
+  border-radius: 50rpx;
+  border: 1rpx solid black;
+}
+
+.players{
+  height: 100rpx;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  
+  flex-wrap: wrap;
+}
+
+.section{
+  height: 100%;
+  width: 100%;
+}

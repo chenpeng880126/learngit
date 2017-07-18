@@ -1,0 +1,124 @@
+.section{
+border-bottom: 5rpx solid #aaa;
+
+}
+.match-info{
+  height: 50rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.match-info-no{
+  font-size: 20rpx;
+  font-weight:bold;
+  color: cornflowerblue;
+}
+
+.match-info-name{
+  font-size: 50rpx;
+  font-weight:bold;
+  color: cornflowerblue;
+}
+
+.team-name{
+  height: 40rpx;
+  margin-top: 10rpx;
+  display: flex;
+}
+
+.team-name text{
+  width: 50%;
+  font-size: 40rpx;
+  font-weight:bold;
+  color: lightseagreen;
+  display: flex;
+  justify-content: center;
+}
+.quarter{
+  font-weight:bold;
+  display: flex;
+  align-content: center;
+}
+.team-score{
+  height: 80rpx;
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.team-score-text{
+  width: 50%;
+  font-size: 80rpx;
+  font-weight:bold;
+  color: palevioletred;
+  display: flex;
+  justify-content: space-around;
+}
+
+.quarter{
+  display: flex;
+  width: 120rpx;
+  font-size: 30rpx;
+}
+
+.info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.info image{
+  height: 30rpx;
+  width: 30rpx
+}
+
+.info-left{
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.info-left-image{
+  height: 30rpx;
+  width: 30rpx; 
+  margin-right: 10rpx;
+}
+
+.info-right{
+  width: 45%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.info-right-image{
+  height: 30rpx;
+  width: 30rpx; 
+  margin-left: 10rpx;
+}
+
+.players{
+  width: 100%;
+  flex-direction: row;
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+
+.btn-player {
+  font-size: 30rpx;
+  color: #EB602E;
+  border: 2rpx solid black;
+  background-color: #fff;
+  border-radius: 50rpx;
+  padding: 0px;
+  height:100rpx;
+  width: 100rpx;
+  line-height: 50rpx;
+  display: table;
+  margin: 10rpx;
+}
+
+.btn-player text {
+  vertical-align:middle;
+  display: table-cell;
+}
